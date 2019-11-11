@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState, useContext } from "react";
+import ChordsContextProvider from "./contexts/ChordsContext";
+import ChordsDisplay from "./components/ChordDisplay";
+import GenerateChordButton from "./components/GenerateChordButton";
+import KeyTypeContextProvider from "./contexts/KeyTypeContext";
+import ChordTypeContextProvider from "./contexts/ChordTypeContext";
+import KeyType from "./components/KeyType";
+import ChordType from "./components/ChordType";
+import Key from "./components/Key";
+import KeyContextProvider from "./contexts/KeyContext";
+import ChordsInKey from "./components/ChordsInKey";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-col justify-center items-center">
+      <KeyTypeContextProvider>
+        <ChordTypeContextProvider>
+          <KeyContextProvider>
+            <ChordsDisplay></ChordsDisplay>
+            <ChordsInKey></ChordsInKey>
+            <KeyType></KeyType>
+            <ChordType></ChordType>
+            <Key></Key>
+            <GenerateChordButton></GenerateChordButton>
+          </KeyContextProvider>
+        </ChordTypeContextProvider>
+      </KeyTypeContextProvider>
     </div>
   );
 }
