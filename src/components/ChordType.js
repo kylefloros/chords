@@ -6,7 +6,6 @@ export default function ChordType() {
   const buttonDefaultClasses =
     "flex m-4 w-16 h-8 py-2 px-2 border border-gray-600 rounded outline-none";
   const labelDefaultClasses = "text-xl";
-  console.log(chordType);
   return (
     <div
       onClick={() => setChordType(chordType === "triad" ? "tetrad" : "triad")}

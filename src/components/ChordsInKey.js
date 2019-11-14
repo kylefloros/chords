@@ -2,51 +2,26 @@ import React, { useContext, useState, useEffect } from "react";
 import { KeyContext } from "../contexts/KeyContext";
 import { KeyTypeContext } from "../contexts/KeyTypeContext";
 import { ChordTypeContext } from "../contexts/ChordTypeContext";
+import { notesLookup, chordsLookup } from "./Notes";
 
 export default function ChordsInKey() {
   const { key } = useContext(KeyContext);
   const { chordType } = useContext(ChordTypeContext);
   const { keyType } = useContext(KeyTypeContext);
-  const notes = [
-    ["Aflat", "A", "Asharp"],
-    ["Bflat", "B"],
-    ["C", "Csharp"],
-    ["Dflat", "D", "Dsharp"],
-    ["Eflat", "E"],
-    ["F", "Fsharp"],
-    ["Gflat", "G", "Gsharp"]
-  ];
+  const notes = notesLookup[key];
+  const chords = chordsLookup[keyType][chordType];
+  console.log(chords);
 
-  const [chordsInKey, setChordsInKey] = useState([]);
-
-  useEffect(() => {
-    const startingIndex = notes.indexOf(key);
-    let chords = [];
-    if (keyType === "major") {
-      chords[0] = notes[startingIndex];
-      chords[1] = notes[startingIndex + 2] + "m";
-      chords[2] = notes[startingIndex + 4] + "m";
-      chords[3] = notes[startingIndex + 5];
-      chords[4] = notes[startingIndex + 7];
-      chords[5] = notes[startingIndex + 9] + "m";
-      chords[6] = notes[startingIndex + 11] + "\u00b0";
-    } else {
-      chords[0] = notes[startingIndex];
-      chords[1] = notes[startingIndex + 2];
-      chords[2] = notes[startingIndex + 3];
-      chords[3] = notes[startingIndex + 5];
-      chords[4] = notes[startingIndex + 7];
-      chords[5] = notes[startingIndex + 8];
-      chords[6] = notes[startingIndex + 10];
-    }
-    setChordsInKey(chords);
-  }, [key, chordType, keyType]);
-
+  console.log(keyType, chordType);
   return (
     <div>
-      {chordsInKey.map(chord => (
-        <span className="px-2">{chord}</span>
-      ))}
+      <span className="mx-4">{notes[0] + chords[0]}</span>
+      <span className="mx-4">{notes[1] + chords[1]}</span>
+      <span className="mx-4">{notes[2] + chords[2]}</span>
+      <span className="mx-4">{notes[3] + chords[3]}</span>
+      <span className="mx-4">{notes[4] + chords[4]}</span>
+      <span className="mx-4">{notes[5] + chords[5]}</span>
+      <span className="mx-4">{notes[6] + chords[6]}</span>
     </div>
   );
 }

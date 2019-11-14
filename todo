@@ -1,0 +1,123 @@
+
+export const notesLookup1 = {
+  c: {
+    major: {
+      triad: ["C", "D", "E", "F", "G", "A", "B"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  g: {
+    major: {
+      triad: ["G", "A", "B", "C", "D", "E", "F♯"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  d: {
+    major: {
+      triad: ["D", "E", "F♯", "G", "A", "B", "C♯"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  a: {
+    major: {
+      triad: ["A", "B", "C♯", "D", "E", "F♯", "G♯"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  e: {
+    major: {
+      triad: ["E", "F♯", "G♯", "A", "B", "C♯", "D♯"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  b: {
+    major: {
+      triad: ["B", "C♯", "D♯", "E", "F♯", "G♯", "A♯"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  f_sharp: {
+    major: {
+      triad: ["F♯", "G♯", "A♯", "B", "C♯", "D♯", "E♯"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  d_flat: {
+    major: {
+      triad: ["D♭", "E♭", "F", "G♭", "A♭", "B♭", "C"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  a_flat: {
+    major: {
+      triad: ["A♭", "B♭", "C", "D♭", "E♭", "F", "G"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  e_flat: {
+    major: {
+      triad: ["E♭", "F", "G", "A♭", "B♭", "C", "D"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  b_flat: {
+    major: {
+      triad: ["B♭", "C", "D", "E♭", "F", "G", "A"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  },
+  f: {
+    major: {
+      triad: ["F", "G", "A", "B♭", "C", "D", "E"],
+      tetrad: []
+    },
+    minor: {
+      triad: [],
+      tetrad: []
+    }
+  }
+};
