@@ -6,7 +6,7 @@ import KeyInfoWrapper from "./components/KeyInfo/KeyInfoWrapper";
 import KeyOptionsWrapper from "./components/KeyOptions/KeyOptionsWrapper";
 function App() {
   return (
-    <div className="App flex flex-col justify-center items-center">
+    <div className="App flex flex-col justify-center items-center bg-charlestonGreen-700">
       <KeyTypeContextProvider>
         <ChordTypeContextProvider>
           <KeyContextProvider>

@@ -15,17 +15,18 @@ export default function ChordsInKey() {
   const { key } = useContext(KeyContext);
   const { chordType } = useContext(ChordTypeContext);
   const { keyType } = useContext(KeyTypeContext);
-  const notes = notesLookup[key];
+  const notes = notesLookup[key][keyType];
   const chords = chordsLookup[keyType][chordType];
   const displayKey = keyLookup[key];
   const formattedKeyType = keyTypeLookup[keyType];
   const formattedChordType = chordTypeLookup[chordType];
+  console.log(keyType, chords);
 
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col items-center text-gray-800 my-2">
-        <div className="text-xl">Diatonic {formattedChordType} in </div>
-        <div className="font-bold text-4xl my-2">
+        <div className="text-lg">Diatonic {formattedChordType} in </div>
+        <div className="font-bold text-5xl mt-1 mb-3">
           {displayKey + " " + formattedKeyType}
         </div>
       </div>

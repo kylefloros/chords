@@ -4,7 +4,7 @@ import KeyButton from "./KeyButton";
 export default function Key() {
   return (
     <div className="flex flex-col items-center mb-6">
-      <div className="text-gray-800 my-2">Select a key</div>
+      {/* <div className="text-gray-800 my-2">Select a key</div> */}
       <ul>
         <div className="flex">
           <KeyButton value="a">A</KeyButton>

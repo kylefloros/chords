@@ -11,7 +11,17 @@ module.exports = {
     },
     colors: {
       transparent: "transparent",
-
+      charlestonGreen: {
+        100: "#E9EAE9",
+        200: "#C7CAC9",
+        300: "#A6AAA8",
+        400: "#636A66",
+        500: "#202A25",
+        600: "#1D2621",
+        700: "#131916",
+        800: "#0E1311",
+        900: "#0A0D0B"
+      },
       black: "#000",
       white: "#fff",
       plumpPurple: {
