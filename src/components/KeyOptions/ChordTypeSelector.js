@@ -1,28 +1,28 @@
 import React, { useContext } from "react";
-import { KeyTypeContext } from "../contexts/KeyTypeContext";
+import { ChordTypeContext } from "../../contexts/ChordTypeContext";
 
-export default function KeyType() {
-  const { keyType, setKeyType } = useContext(KeyTypeContext);
+export default function ChordType() {
+  const { chordType, setChordType } = useContext(ChordTypeContext);
   const buttonDefaultClasses =
     "flex m-4 w-16 h-8 py-2 px-2 border border-gray-600 rounded outline-none";
   const labelDefaultClasses = "text-xl";
   return (
     <div
-      onClick={() => setKeyType(keyType === "major" ? "minor" : "major")}
-      className="flex items-center mt-16"
+      onClick={() => setChordType(chordType === "triad" ? "tetrad" : "triad")}
+      className="flex items-center mt-16 cursor-pointer"
     >
       <div
         className={
-          keyType === "major"
+          chordType === "triad"
             ? labelDefaultClasses + " text-black"
             : labelDefaultClasses + " text-gray-600 cursor-pointer"
         }
       >
-        Major
+        Triads
       </div>
       <button
         className={
-          keyType === "major"
+          chordType === "triad"
             ? buttonDefaultClasses
             : buttonDefaultClasses + " justify-end"
         }
@@ -31,12 +31,12 @@ export default function KeyType() {
       </button>
       <div
         className={
-          keyType === "minor"
+          chordType === "tetrad"
             ? labelDefaultClasses + " text-black"
             : labelDefaultClasses + " text-gray-600 cursor-pointer"
         }
       >
-        Minor
+        7th Chords
       </div>
     </div>
   );

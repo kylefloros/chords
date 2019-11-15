@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ChordTypeContext } from "../contexts/ChordTypeContext";
+import { ChordTypeContext } from "../../contexts/ChordTypeContext";
 
 export default function ChordType() {
   const { chordType, setChordType } = useContext(ChordTypeContext);

@@ -1,27 +1,17 @@
-import React, { createContext, useState, useContext } from "react";
-import ChordsContextProvider from "./contexts/ChordsContext";
-import ChordsDisplay from "./components/ChordDisplay";
-import GenerateChordButton from "./components/GenerateChordButton";
+import React from "react";
 import KeyTypeContextProvider from "./contexts/KeyTypeContext";
 import ChordTypeContextProvider from "./contexts/ChordTypeContext";
-import KeyType from "./components/KeyType";
-import ChordType from "./components/ChordType";
-import Key from "./components/Key";
 import KeyContextProvider from "./contexts/KeyContext";
-import ChordsInKey from "./components/ChordsInKey";
-
+import KeyInfoWrapper from "./components/KeyInfo/KeyInfoWrapper";
+import KeyOptionsWrapper from "./components/KeyOptions/KeyOptionsWrapper";
 function App() {
   return (
     <div className="App flex flex-col justify-center items-center">
       <KeyTypeContextProvider>
         <ChordTypeContextProvider>
           <KeyContextProvider>
-            <ChordsDisplay></ChordsDisplay>
-            <ChordsInKey></ChordsInKey>
-            <KeyType></KeyType>
-            <ChordType></ChordType>
-            <Key></Key>
-            <GenerateChordButton></GenerateChordButton>
+            <KeyInfoWrapper></KeyInfoWrapper>
+            <KeyOptionsWrapper></KeyOptionsWrapper>
           </KeyContextProvider>
         </ChordTypeContextProvider>
       </KeyTypeContextProvider>
