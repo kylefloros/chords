@@ -66,11 +66,11 @@ export const chordsLookup = {
     tetrad: ["maj7", "m7", "m7", "maj7", "7", "m7", "m7(♭5)"]
   },
   natural_minor: {
-    triad: ["m", "°", "", "m", "m", "", ""],
+    triad: ["m", "dim", "", "m", "m", "", ""],
     tetrad: ["min7", "m7(♭5)", "maj7", "min7", "min7", "maj7", "7"]
   },
   harmonic_minor: {
-    triad: ["m", "°", "aug", "m", "", "", "°"],
+    triad: ["m", "dim", "aug", "m", "", "", "dim"],
     tetrad: ["m/M7", "m7(♭5)", "augM7", "min7", "7", "maj7", "dim7"]
   }
 };

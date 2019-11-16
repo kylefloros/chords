@@ -4,7 +4,6 @@ import ChordTypeContextProvider from "./contexts/ChordTypeContext";
 import KeyContextProvider from "./contexts/KeyContext";
 import KeyOptionsWrapper from "./components/KeyOptions/KeyOptionsWrapper";
 import ChordsInKey from "./components/KeyInfo/ChordsInKey";
-
 function App() {
   return (
     <div className="flex justify-center w-screen">
@@ -14,6 +13,13 @@ function App() {
             <KeyContextProvider>
               <ChordsInKey></ChordsInKey>
               <KeyOptionsWrapper></KeyOptionsWrapper>
+              <a
+                className="m-2 self-end text-blue-500 text-xl hover:underline"
+                href="https://twitter.com/kylefloros"
+                target="_blank"
+              >
+                @kylefloros
+              </a>
             </KeyContextProvider>
           </ChordTypeContextProvider>
         </KeyTypeContextProvider>
