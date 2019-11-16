@@ -20,7 +20,6 @@ export default function ChordsInKey() {
   const displayKey = keyLookup[key];
   const formattedKeyType = keyTypeLookup[keyType];
   const formattedChordType = chordTypeLookup[chordType];
-  console.log(keyType, chords);
 
   return (
     <div className="flex flex-col items-center w-full sm:mt-4">
