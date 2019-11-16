@@ -24,7 +24,7 @@ export default function ChordsInKey() {
 
   return (
     <div className="flex flex-col items-center w-full sm:mt-4">
-      <div className="font-bold text-2xl sm:text-4xl md:text-5xl text-gray-800 mt-4">
+      <div className="font-bold text-xl sm:text-2xl md:text-4xl text-gray-800 mt-4">
         {" " +
           displayKey +
           " " +
