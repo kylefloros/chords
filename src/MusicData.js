@@ -11,7 +11,7 @@ export const notesLookup = {
   },
   d: {
     major: ["D", "E", "F♯", "G", "A", "B", "C♯"],
-    natural_minor: ["D, E, F, G, A, B♭, C, D"],
+    natural_minor: ["D", "E", "F", "G", "A", "B♭", "C", "D"],
     harmonic_minor: ["D", "E", "F", "G", "A", "B♭", "C♯"]
   },
   a: {
@@ -98,5 +98,5 @@ export const keyTypeLookup = {
 
 export const chordTypeLookup = {
   triad: "Triads",
-  tetrad: "7 Chords"
+  tetrad: "7th Chords"
 };
