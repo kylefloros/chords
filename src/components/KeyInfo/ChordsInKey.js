@@ -22,7 +22,7 @@ export default function ChordsInKey() {
   const formattedChordType = chordTypeLookup[chordType];
 
   return (
-    <div className="flex flex-col items-center w-full sm:mt-4">
+    <div className="flex flex-col items-center w-full sm:mt-2">
       <div className="font-bold text-xl sm:text-2xl md:text-4xl text-gray-800 mt-4">
         {" " +
           displayKey +

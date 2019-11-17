@@ -11,10 +11,11 @@ function App() {
         <KeyTypeContextProvider>
           <ChordTypeContextProvider>
             <KeyContextProvider>
+              <h5 className="text-lg self-start mt-4">Jam Chords</h5>
               <ChordsInKey></ChordsInKey>
               <KeyOptionsWrapper></KeyOptionsWrapper>
               <a
-                className="m-2 self-end text-blue-500 text-xl hover:underline"
+                className="m-2 self-end text-blue-700 text-xl hover:underline"
                 href="https://twitter.com/kylefloros"
                 target="_blank"
               >
