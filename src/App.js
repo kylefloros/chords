@@ -18,6 +18,7 @@ function App() {
                 className="m-2 self-end text-blue-700 text-xl hover:underline"
                 href="https://twitter.com/kylefloros"
                 target="_blank"
+                rel="noopener"
               >
                 @kylefloros
               </a>
