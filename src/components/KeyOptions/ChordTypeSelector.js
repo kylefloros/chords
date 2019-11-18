@@ -5,7 +5,7 @@ export default function ChordType() {
   return (
     <ul className="flex justify-start w-full">
       <ChordTypeButton value="triad">Triads</ChordTypeButton>
-      <ChordTypeButton value="tetrad">7 Chords</ChordTypeButton>
+      <ChordTypeButton value="tetrad">7th Chords</ChordTypeButton>
     </ul>
   );
 }

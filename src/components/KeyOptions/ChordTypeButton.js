@@ -5,13 +5,13 @@ export default function KeyButton(props) {
   const { chordType, setChordType } = useContext(ChordTypeContext);
 
   const defaultStyles =
-    "flex text-white font-bold flex-grow justify-center items-center m-2 p-4 cursor-pointer rounded";
+    "border-gray-700 border-2 shadow-md flex text-white font-bold flex-grow justify-center items-center m-2 p-4 cursor-pointer rounded";
   return (
     <li
       className={
         chordType === props.value
-          ? defaultStyles + " bg-indigo-500 border-gray-700 border-2 "
-          : defaultStyles + " hover:bg-purple-700 bg-purple-800"
+          ? defaultStyles + " bg-indigo-500 border-gray-700"
+          : defaultStyles + " hover:bg-purple-600 bg-purple-800"
       }
       onClick={() => setChordType(props.value)}
     >
