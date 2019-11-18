@@ -4,7 +4,7 @@ import { KeyContext } from "../../contexts/KeyContext";
 export default function KeyButton(props) {
   const { key, setKey } = useContext(KeyContext);
   const defaultStyles =
-    "shadow-md flex text-white font-bold justify-center items-center m-2 w-16 h-16 cursor-pointer rounded ";
+    "flex text-white font-bold justify-center items-center m-2 w-16 h-16 cursor-pointer rounded ";
   return (
     <li
       className={
