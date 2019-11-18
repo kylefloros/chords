@@ -14,14 +14,24 @@ function App() {
               <h5 className="text-lg self-start mt-4 hidden">Jam Chords</h5>
               <ChordsInKey></ChordsInKey>
               <KeyOptionsWrapper></KeyOptionsWrapper>
-              <a
-                className="m-2 self-end text-blue-700 text-xl hover:underline"
-                href="https://twitter.com/kylefloros"
-                target="_blank"
-                rel="noopener"
-              >
-                @kylefloros
-              </a>
+              <div className="flex justify-end w-full">
+                <a
+                  className="m-2 self-end text-blue-700 text-xl hover:underline"
+                  href="https://github.com/kylefloros/chords"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  repo
+                </a>
+                <a
+                  className="m-2 self-end text-blue-700 text-xl hover:underline"
+                  href="https://twitter.com/kylefloros"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  @kylefloros
+                </a>
+              </div>
             </KeyContextProvider>
           </ChordTypeContextProvider>
         </KeyTypeContextProvider>
