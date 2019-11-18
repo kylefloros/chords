@@ -11,7 +11,7 @@ function App() {
         <KeyTypeContextProvider>
           <ChordTypeContextProvider>
             <KeyContextProvider>
-              <h5 className="text-lg self-start mt-4">Jam Chords</h5>
+              <h5 className="text-lg self-start mt-4 hidden">Jam Chords</h5>
               <ChordsInKey></ChordsInKey>
               <KeyOptionsWrapper></KeyOptionsWrapper>
               <a

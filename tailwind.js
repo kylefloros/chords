@@ -11,30 +11,8 @@ module.exports = {
     },
     colors: {
       transparent: "transparent",
-      charlestonGreen: {
-        100: "#E9EAE9",
-        200: "#C7CAC9",
-        300: "#A6AAA8",
-        400: "#636A66",
-        500: "#202A25",
-        600: "#1D2621",
-        700: "#131916",
-        800: "#0E1311",
-        900: "#0A0D0B"
-      },
       black: "#000",
       white: "#fff",
-      plumpPurple: {
-        100: "#D3CDEB",
-        200: "#B6ADDD",
-        300: "#998CD0",
-        400: "#7C6BC3",
-        500: "#5F4BB6",
-        600: "#4E3E95",
-        700: "#3D3074",
-        800: "#2C2353",
-        900: "#1A1532"
-      },
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",

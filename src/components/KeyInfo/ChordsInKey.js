@@ -31,7 +31,7 @@ export default function ChordsInKey() {
           " Diatonic " +
           formattedChordType}
       </div>
-      <div className="flex flex-wrap w-full mt-4">
+      <div className="flex flex-wrap w-full mt-4 ">
         <Chord number="1" chord={notes[0] + chords[0]}></Chord>
         <Chord number="2" chord={notes[1] + chords[1]}></Chord>
         <Chord number="3" chord={notes[2] + chords[2]}></Chord>
