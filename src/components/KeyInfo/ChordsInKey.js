@@ -31,15 +31,60 @@ export default function ChordsInKey() {
           " Diatonic " +
           formattedChordType}
       </div>
-      <div className="flex flex-wrap w-full mt-4 ">
-        <Chord number="1" chord={notes[0] + chords[0]}></Chord>
-        <Chord number="2" chord={notes[1] + chords[1]}></Chord>
-        <Chord number="3" chord={notes[2] + chords[2]}></Chord>
-        <Chord number="4" chord={notes[3] + chords[3]}></Chord>
-        <Chord number="5" chord={notes[4] + chords[4]}></Chord>
-        <Chord number="6" chord={notes[5] + chords[5]}></Chord>
-        <Chord number="7" chord={notes[6] + chords[6]}></Chord>
-      </div>
+      {notes.length === 1 ? (
+        <>
+          <div className="font-bold text-xl sm:text-2xl md:text-4xl text-gray-800 mt-16 text-gray-800 h-16">
+            {notes[0]}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="flex flex-wrap w-full mt-4 ">
+            <Chord
+              number={1}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+            <Chord
+              number={3}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+            <Chord
+              number={4}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+            <Chord
+              number={2}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+            <Chord
+              number={5}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+            <Chord
+              number={6}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+            <Chord
+              number={7}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+          </div>
+        </>
+      )}
     </div>
   );
 }

@@ -1,63 +1,93 @@
 export const notesLookup = {
+  a: {
+    major: ["A", "B", "C#", "D", "E", "F#", "G#"],
+    natural_minor: ["A", "B", "C", "D", "E", "F", "G"],
+    harmonic_minor: ["A", "B", "C", "D", "E", "F", "G#"]
+  },
+  a_sharp: {
+    major: ["See Bb Major"],
+    natural_minor: ["A#", "B#", "C#", "D#", "E#", "F#", "G#"],
+    harmonic_minor: ["See Bb Harmonic Minor"]
+  },
+  b_flat: {
+    major: ["Bb", "C", "D", "Eb", "F", "G", "A"],
+    natural_minor: ["Bb", "C", "Db", "Eb", "F", "Gb", "Ab"],
+    harmonic_minor: ["Bb", "C", "Db", "Eb", "F", "Gb", "A"]
+  },
+  b: {
+    major: ["B", "C#", "D#", "E", "F#", "G#", "A#"],
+    natural_minor: ["B", "C#", "D", "E", "F#", "G", "A"],
+    harmonic_minor: ["B", "C#", "D", "E", "F#", "G", "A#"]
+  },
+  c_flat: {
+    major: ["Cb", "Db", "Eb", "Fb", "Gb", "Ab", "Bb"],
+    natural_minor: ["See B Natural Minor"],
+    harmonic_minor: ["See B Harmonic Minor"]
+  },
   c: {
     major: ["C", "D", "E", "F", "G", "A", "B"],
     natural_minor: ["C", "D", "Eb", "F", "G", "Ab", "Bb"],
     harmonic_minor: ["C", "D", "Eb", "F", "G", "Ab", "B"]
   },
-  g: {
-    major: ["G", "A", "B", "C", "D", "E", "F#"],
-    natural_minor: ["G", "A", "Bb", "C", "D", "Eb", "F", "G"],
-    harmonic_minor: ["G", "A", "Bb", "C", "D", "Eb", "F#"]
-  },
-  d: {
-    major: ["D", "E", "F#", "G", "A", "B", "C#"],
-    natural_minor: ["D", "E", "F", "G", "A", "Bb", "C", "D"],
-    harmonic_minor: ["D", "E", "F", "G", "A", "Bb", "C#"]
-  },
-  a: {
-    major: ["A", "B", "C#", "D", "E", "F#", "G#"],
-    natural_minor: ["A", "B", "C", "D", "E", "F", "G", "A"],
-    harmonic_minor: ["A", "B", "C", "D", "E", "F", "G#"]
-  },
-  e: {
-    major: ["E", "F#", "G#", "A", "B", "C#", "D#"],
-    natural_minor: ["E", "F#", "G", "A", "B", "C", "D", "E"],
-    harmonic_minor: ["E", "F#", "G", "A", "B", "C", "D#"]
-  },
-  b: {
-    major: ["B", "C#", "D#", "E", "F#", "G#", "A#"],
-    natural_minor: ["B", "C#", "D", "E", "F#", "G", "A", "B"],
-    harmonic_minor: ["B", "C#", "D", "E", "F#", "G", "A#"]
-  },
-  f_sharp: {
-    major: ["F#", "G#", "A#", "B", "C#", "D#", "E#"],
-    natural_minor: ["F#", "G#", "A", "B", "C#", "D", "E", "F#"],
-    harmonic_minor: ["F#", "G#", "A", "B", "C#", "D", "E#"]
+  c_sharp: {
+    major: ["C#", "D#", "E#", "F#", "G#", "A#", "B#"],
+    natural_minor: ["C#", "D#", "E", "F#", "G#", "A", "B"],
+    harmonic_minor: ["C#", "D#", "E", "F#", "G#", "A", "C"]
   },
   d_flat: {
     major: ["Db", "Eb", "F", "Gb", "Ab", "Bb", "C"],
-    natural_minor: ["C#", "D#", "E", "F#", "G#", "A", "B", "C#"],
-    harmonic_minor: ["Db", "Eb", "Fb", "Gb", "Ab", "Bbb", "C"]
+    natural_minor: ["See C# Natural Minor"],
+    harmonic_minor: ["See C# Harmonic Minor"]
   },
-  a_flat: {
-    major: ["Ab", "Bb", "C", "Db", "Eb", "F", "G"],
-    natural_minor: ["G#", "A#", "B", "C#", "D#", "E", "F#", "G#"],
-    harmonic_minor: ["Ab", "Bb", "Cb", "Db", "Eb", "Fb", "G"]
+  d: {
+    major: ["D", "E", "F#", "G", "A", "B", "C#"],
+    natural_minor: ["D", "E", "F", "G", "A", "Bb", "C"],
+    harmonic_minor: ["D", "E", "F", "G", "A", "Bb", "C#"]
+  },
+  d_sharp: {
+    major: ["See Eb Major"],
+    natural_minor: ["D#", "E#", "F#", "G#", "A#", "B", "C#"],
+    harmonic_minor: ["See Eb Harmonic Minor"]
   },
   e_flat: {
     major: ["Eb", "F", "G", "Ab", "Bb", "C", "D"],
-    natural_minor: ["Eb", "F", "Gb", "Ab", "Bb", "Cb", "Db", "Eb"],
+    natural_minor: ["Eb", "F", "Gb", "Ab", "Bb", "Cb", "Db"],
     harmonic_minor: ["Eb", "F", "Gb", "Ab", "Bb", "Cb", "D"]
   },
-  b_flat: {
-    major: ["Bb", "C", "D", "Eb", "F", "G", "A"],
-    natural_minor: ["Bb", "C", "Db", "Eb", "F", "Gb", "Ab", "Bb"],
-    harmonic_minor: ["Bb", "C", "Db", "Eb", "F", "Gb", "A"]
+  e: {
+    major: ["E", "F#", "G#", "A", "B", "C#", "D#"],
+    natural_minor: ["E", "F#", "G", "A", "B", "C", "D"],
+    harmonic_minor: ["E", "F#", "G", "A", "B", "C", "D#"]
   },
   f: {
     major: ["F", "G", "A", "Bb", "C", "D", "E"],
-    natural_minor: ["F", "G", "Ab", "Bb", "C", "Db", "Eb", "F"],
+    natural_minor: ["F", "G", "Ab", "Bb", "C", "Db", "Eb"],
     harmonic_minor: ["F", "G", "Ab", "Bb", "C", "Db", "E"]
+  },
+  f_sharp: {
+    major: ["F#", "G#", "A#", "B", "C#", "D#", "E#"],
+    natural_minor: ["F#", "G#", "A", "B", "C#", "D", "E"],
+    harmonic_minor: ["F#", "G#", "A", "B", "C#", "D", "E#"]
+  },
+  g_flat: {
+    major: ["Gb", "Ab", "Bb", "Cb", "Db", "Eb", "F"],
+    natural_minor: ["See F# Natural Minor"],
+    harmonic_minor: ["See F# Harmonic Minor"]
+  },
+  g: {
+    major: ["G", "A", "B", "C", "D", "E", "F#"],
+    natural_minor: ["G", "A", "Bb", "C", "D", "Eb", "F"],
+    harmonic_minor: ["G", "A", "Bb", "C", "D", "Eb", "F#"]
+  },
+  g_sharp: {
+    major: ["See Ab Major"],
+    natural_minor: ["G#", "A#", "B", "C#", "D#", "E", "F#"],
+    harmonic_minor: ["See Ab Harmonic Minor"]
+  },
+  a_flat: {
+    major: ["Ab", "Bb", "C", "Db", "Eb", "F", "G"],
+    natural_minor: ["Ab", "Bb", "Cb", "Db", "Eb", "Fb", "Gb"],
+    harmonic_minor: ["Ab", "Bb", "Cb", "Db", "Eb", "Fb", "G"]
   }
 };
 export const chordsLookup = {
@@ -77,16 +107,22 @@ export const chordsLookup = {
 
 export const keyLookup = {
   a: "A",
+  a_sharp: "A#",
   b_flat: "Bb",
   b: "B",
+  c_flat: "Cb",
   c: "C",
+  c_sharp: "C#",
   d_flat: "Db",
   d: "D",
+  d_sharp: "D#",
   e_flat: "Eb",
   e: "E",
   f: "F",
   f_sharp: "F#",
+  g_flat: "Gb",
   g: "G",
+  g_sharp: "G#",
   a_flat: "Ab"
 };
 
