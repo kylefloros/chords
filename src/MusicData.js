@@ -5,9 +5,9 @@ export const notesLookup = {
     harmonic_minor: ["A", "B", "C", "D", "E", "F", "G#"]
   },
   a_sharp: {
-    major: ["See Bb Major"],
+    major: ["A#", "B#", "C##", "D#", "E#", "F##", "G##"],
     natural_minor: ["A#", "B#", "C#", "D#", "E#", "F#", "G#"],
-    harmonic_minor: ["See Bb Harmonic Minor"]
+    harmonic_minor: ["A#", "B#", "C#", "D#", "E#", "F#", "G##"]
   },
   b_flat: {
     major: ["Bb", "C", "D", "Eb", "F", "G", "A"],
@@ -21,8 +21,8 @@ export const notesLookup = {
   },
   c_flat: {
     major: ["Cb", "Db", "Eb", "Fb", "Gb", "Ab", "Bb"],
-    natural_minor: ["See B Natural Minor"],
-    harmonic_minor: ["See B Harmonic Minor"]
+    natural_minor: ["Cb", "Db", "Ebb", "Fb", "Gb", "Abb", "Bbb"],
+    harmonic_minor: ["Cb", "Db", "Ebb", "Fb", "Gb", "Abb", "Bb"]
   },
   c: {
     major: ["C", "D", "E", "F", "G", "A", "B"],
@@ -36,8 +36,8 @@ export const notesLookup = {
   },
   d_flat: {
     major: ["Db", "Eb", "F", "Gb", "Ab", "Bb", "C"],
-    natural_minor: ["See C# Natural Minor"],
-    harmonic_minor: ["See C# Harmonic Minor"]
+    natural_minor: ["Db", "Eb", "Fb", "Gb", "Ab", "Bbb", "Cb"],
+    harmonic_minor: ["Db", "Eb", "Fb", "Gb", "Ab", "Bbb", "C"]
   },
   d: {
     major: ["D", "E", "F#", "G", "A", "B", "C#"],
@@ -45,9 +45,9 @@ export const notesLookup = {
     harmonic_minor: ["D", "E", "F", "G", "A", "Bb", "C#"]
   },
   d_sharp: {
-    major: ["See Eb Major"],
+    major: ["D#", "E#", "F##", "G#", "A#", "B#", "C##"],
     natural_minor: ["D#", "E#", "F#", "G#", "A#", "B", "C#"],
-    harmonic_minor: ["See Eb Harmonic Minor"]
+    harmonic_minor: ["D#", "E#", "F#", "G#", "A#", "B", "C##"]
   },
   e_flat: {
     major: ["Eb", "F", "G", "Ab", "Bb", "C", "D"],
@@ -71,8 +71,8 @@ export const notesLookup = {
   },
   g_flat: {
     major: ["Gb", "Ab", "Bb", "Cb", "Db", "Eb", "F"],
-    natural_minor: ["See F# Natural Minor"],
-    harmonic_minor: ["See F# Harmonic Minor"]
+    natural_minor: ["Gb", "Ab", "Bbb", "Cb", "Db", "Ebb", "Fb"],
+    harmonic_minor: ["Gb", "Ab", "Bbb", "Cb", "Db", "Ebb", "F"]
   },
   g: {
     major: ["G", "A", "B", "C", "D", "E", "F#"],
@@ -80,9 +80,9 @@ export const notesLookup = {
     harmonic_minor: ["G", "A", "Bb", "C", "D", "Eb", "F#"]
   },
   g_sharp: {
-    major: ["See Ab Major"],
+    major: ["G#", "A#", "B#", "C#", "D#", "E#", "F##"],
     natural_minor: ["G#", "A#", "B", "C#", "D#", "E", "F#"],
-    harmonic_minor: ["See Ab Harmonic Minor"]
+    harmonic_minor: ["G#", "A#", "B", "C#", "D#", "E", "F##"]
   },
   a_flat: {
     major: ["Ab", "Bb", "C", "Db", "Eb", "F", "G"],
