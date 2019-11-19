@@ -14,7 +14,7 @@ function App() {
               <h5 className="text-lg self-start mt-4 hidden">Jam Chords</h5>
               <ChordsInKey></ChordsInKey>
               <KeyOptionsWrapper></KeyOptionsWrapper>
-              <div className="flex justify-end w-full">
+              <div className="flex justify-end w-full mr-32">
                 <a
                   className="m-2 self-end text-blue-700 text-xl hover:underline"
                   href="https://github.com/kylefloros/chords"
