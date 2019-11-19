@@ -47,6 +47,12 @@ export default function ChordsInKey() {
               chordType={chordType}
             ></Chord>
             <Chord
+              number={2}
+              chords={chords}
+              notes={notes}
+              chordType={chordType}
+            ></Chord>
+            <Chord
               number={3}
               chords={chords}
               notes={notes}
@@ -54,12 +60,6 @@ export default function ChordsInKey() {
             ></Chord>
             <Chord
               number={4}
-              chords={chords}
-              notes={notes}
-              chordType={chordType}
-            ></Chord>
-            <Chord
-              number={2}
               chords={chords}
               notes={notes}
               chordType={chordType}
