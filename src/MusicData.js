@@ -32,7 +32,7 @@ export const notesLookup = {
   c_sharp: {
     major: ["C#", "D#", "E#", "F#", "G#", "A#", "B#"],
     natural_minor: ["C#", "D#", "E", "F#", "G#", "A", "B"],
-    harmonic_minor: ["C#", "D#", "E", "F#", "G#", "A", "C"]
+    harmonic_minor: ["C#", "D#", "E", "F#", "G#", "A", "B#"]
   },
   d_flat: {
     major: ["Db", "Eb", "F", "Gb", "Ab", "Bb", "C"],
