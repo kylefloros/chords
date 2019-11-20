@@ -8,7 +8,7 @@ export default function Chord(props) {
   const fourthNote =
     props.chordType == "tetrad" ? props.notes[(props.number + 5) % 7] : "";
   return (
-    <div className="m-2 flex-grow bg-gray-200 rounded p-2 flex flex-col justify-center items-center">
+    <div className="m-2 flex-grow bg-gray-200 rounded p-2 flex flex-col justify-center items-center border-2 border-gray-800 ">
       <div className="text-md">{props.number}</div>
       <div className="fmx-4 text-3xl">
         {props.notes[props.number - 1] + props.chords[props.number - 1]}

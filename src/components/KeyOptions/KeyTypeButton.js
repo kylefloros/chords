@@ -4,13 +4,15 @@ import { KeyTypeContext } from "../../contexts/KeyTypeContext";
 export default function KeyButton(props) {
   const { keyType, setKeyType } = useContext(KeyTypeContext);
   const defaultStyles =
-    "border-gray-700 border-2 shadow-md flex text-white font-bold flex-grow justify-center items-center m-2 p-4 cursor-pointer rounded";
+    "text-2xl border-gray-700 border-2 shadow-md flex flex-grow justify-center items-center m-2 p-3 cursor-pointer rounded";
   return (
     <li
       className={
         keyType === props.value
-          ? defaultStyles + " bg-indigo-500"
-          : defaultStyles + " hover:bg-purple-600 bg-purple-800"
+          ? defaultStyles +
+            " bg-gray-200 text-gray-800 font-bold border-2 border-yellow-400"
+          : defaultStyles +
+            " hover:bg-blue-800 bg-blue-600 text-white border-2 border-gray-800 p-2"
       }
       onClick={() => setKeyType(props.value)}
     >
