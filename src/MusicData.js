@@ -1,4 +1,4 @@
-//♯ ♮ ♭ ø ° Δ x
+//♯ ♮ ♭ ø ° Δ x 𝄫
 export const notesLookup = {
   a: {
     major: ["A", "B", "C♯", "D", "E", "F♯", "G♯"],
@@ -22,8 +22,8 @@ export const notesLookup = {
   },
   c_flat: {
     major: ["C♭", "D♭", "E♭", "F♭", "G♭", "A♭", "B♭"],
-    natural_minor: ["C♭", "D♭", "E♭♭", "F♭", "G♭", "A♭♭", "B♭♭"],
-    harmonic_minor: ["C♭", "D♭", "E♭♭", "F♭", "G♭", "A♭♭", "B♭"]
+    natural_minor: ["C♭", "D♭", "E𝄫", "F♭", "G♭", "A𝄫", "B𝄫"],
+    harmonic_minor: ["C♭", "D♭", "E𝄫", "F♭", "G♭", "A𝄫", "B♭"]
   },
   c: {
     major: ["C", "D", "E", "F", "G", "A", "B"],
@@ -37,8 +37,8 @@ export const notesLookup = {
   },
   d_flat: {
     major: ["D♭", "E♭", "F", "G♭", "A♭", "B♭", "C"],
-    natural_minor: ["D♭", "E♭", "F♭", "G♭", "A♭", "B♭♭", "C♭"],
-    harmonic_minor: ["D♭", "E♭", "F♭", "G♭", "A♭", "B♭♭", "C"]
+    natural_minor: ["D♭", "E♭", "F♭", "G♭", "A♭", "B𝄫", "C♭"],
+    harmonic_minor: ["D♭", "E♭", "F♭", "G♭", "A♭", "B𝄫", "C"]
   },
   d: {
     major: ["D", "E", "F♯", "G", "A", "B", "C♯"],
@@ -72,8 +72,8 @@ export const notesLookup = {
   },
   g_flat: {
     major: ["G♭", "A♭", "B♭", "C♭", "D♭", "E♭", "F"],
-    natural_minor: ["G♭", "A♭", "B♭♭", "C♭", "D♭", "E♭♭", "F♭"],
-    harmonic_minor: ["G♭", "A♭", "B♭♭", "C♭", "D♭", "E♭♭", "F"]
+    natural_minor: ["G♭", "A♭", "B𝄫", "C♭", "D♭", "E𝄫", "F♭"],
+    harmonic_minor: ["G♭", "A♭", "B𝄫", "C♭", "D♭", "E𝄫", "F"]
   },
   g: {
     major: ["G", "A", "B", "C", "D", "E", "F♯"],
