@@ -93,15 +93,15 @@ export const notesLookup = {
 export const chordsLookup = {
   major: {
     triad: ["", "m", "m", "", "", "m", "dim"],
-    tetrad: ["maj7", "m7", "m7", "maj7", "7", "m7", "m7(b5)"]
+    seventh: ["maj7", "m7", "m7", "maj7", "7", "m7", "m7(b5)"]
   },
   natural_minor: {
     triad: ["m", "dim", "", "m", "m", "", ""],
-    tetrad: ["min7", "m7(b5)", "maj7", "min7", "min7", "maj7", "7"]
+    seventh: ["min7", "m7(b5)", "maj7", "min7", "min7", "maj7", "7"]
   },
   harmonic_minor: {
     triad: ["m", "dim", "aug", "m", "", "", "dim"],
-    tetrad: ["m/M7", "m7(b5)", "augM7", "min7", "7", "maj7", "dim7"]
+    seventh: ["m/M7", "m7(b5)", "augM7", "min7", "7", "maj7", "dim7"]
   }
 };
 
@@ -134,5 +134,5 @@ export const keyTypeLookup = {
 
 export const chordTypeLookup = {
   triad: "Triads",
-  tetrad: "7th Chords"
+  seventh: "7th Chords"
 };

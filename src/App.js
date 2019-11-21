@@ -3,7 +3,7 @@ import KeyTypeContextProvider from "./contexts/KeyTypeContext";
 import ChordTypeContextProvider from "./contexts/ChordTypeContext";
 import KeyContextProvider from "./contexts/KeyContext";
 import KeyOptionsWrapper from "./components/KeyOptions/KeyOptionsWrapper";
-import ChordsInKey from "./components/KeyInfo/ChordsInKey";
+import ChordDisplay from "./components/KeyInfo/ChordDisplay";
 function App() {
   return (
     <div className="flex justify-center w-screen">
@@ -12,7 +12,7 @@ function App() {
           <ChordTypeContextProvider>
             <KeyContextProvider>
               <h5 className="text-lg self-start mt-4 hidden">Jam Chords</h5>
-              <ChordsInKey></ChordsInKey>
+              <ChordDisplay></ChordDisplay>
               <KeyOptionsWrapper></KeyOptionsWrapper>
               <div className="flex justify-end w-full mr-32">
                 <a
